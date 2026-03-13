@@ -1,0 +1,17 @@
+@media (min-width: 768px){
+
+    #menu{
+        Display:none;
+    }
+
+    Nav{
+        Display:flex;
+        flex-direction: row;
+        Gap:20px;
+    }
+
+    .gallery{
+        Grid-template-columns:repeat(3,1fr);
+    }
+
+}
