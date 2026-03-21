@@ -1,58 +1,59 @@
-
 :root {
-    --primary: #c8102e; /* red */
-    --secondary: #1b5e20; /* green */
-    --light: rgba(255,255,255,0.85);
+    --primary: #c8102e;
+    /* red */
+    --secondary: #1b5e20;
+    /* green */
+    --light: rgba(255, 255, 255, 0.85);
 }
 
 body {
-    margin:0;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
     background: var(--primary);
-    color:white;
-    text-align:center;
-    padding:1rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
     border-bottom: 20px solid var(--secondary);
 }
 
 /* HERO IMAGE */
 .hero img {
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 }
 
 /* CARDS */
 .card {
     background: var(--light);
-    padding:15px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    margin:10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
     text-align: center;
 }
 
 /* MOBILE VIEW */
 .weather img {
-    width:40px;
+    width: 40px;
 }
 
 /* FOOTER */
 footer {
-    text-align:center;
+    text-align: center;
     background: var(--primary);
-    color:white;
-    padding:10px;
+    color: white;
+    padding: 10px;
 }
 
 /* DESKTOP VIEW */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
     main {
         width: 100%;
-        margin:auto;
+        margin: auto;
     }
 
     h2 {
@@ -62,36 +63,37 @@ footer {
 
     /* OVERLAY EFFECT */
     .card {
-        position:absolute;
-        width:250px;
+        position: absolute;
+        width: 250px;
         text-align: center;
     }
+
     main {
         position: relative;
     }
 
     /* LEFT SIDE (DATA) */
     #class1 {
-        top:5%;
-        left:0;
+        top: 5%;
+        left: 0;
     }
 
     /* RIGHT SIDE (WEATHER) */
     .weather {
-        bottom:5%;
-        right:0;
+        bottom: 5%;
+        right: 0;
     }
 
 
 
     /* HIDE SVG */
     .weather img {
-        display:none;
+        display: none;
     }
 
     /* EMOJI */
     .weather-title::after {
-        content:" ⛅";
+        content: " ⛅";
     }
 
 }
