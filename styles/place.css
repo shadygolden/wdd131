@@ -19,10 +19,6 @@ header {
 }
 
 /* HERO IMAGE */
-.hero {
-    position: relative;
-}
-
 .hero img {
     width:100%;
     display:block;
@@ -70,16 +66,19 @@ footer {
         width:250px;
         text-align: center;
     }
+    main {
+        position: relative;
+    }
 
     /* LEFT SIDE (DATA) */
     #class1 {
-        top:20%;
+        top:5%;
         left:0;
     }
 
     /* RIGHT SIDE (WEATHER) */
     .weather {
-        top:40%;
+        bottom:5%;
         right:0;
     }
 
