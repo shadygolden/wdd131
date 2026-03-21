@@ -19,9 +19,7 @@ border-bottom: 20px solid var(--secondary);
 }
 
 /* HERO IMAGE */
-.hero{
-position: relative;
-}
+
 
 .hero img{
 width:100%;
@@ -83,7 +81,7 @@ text-align: center;
 
 /* RIGHT SIDE (WEATHER) */
 .weather{
-top:40%;
+top:100%;
 right:0;
 }
 
