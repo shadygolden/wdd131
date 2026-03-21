@@ -1,100 +1,98 @@
 
-:root{
---primary: #c8102e; /* red */
---secondary: #1b5e20; /* green */
---light: rgba(255,255,255,0.85);
+:root {
+    --primary: #c8102e; /* red */
+    --secondary: #1b5e20; /* green */
+    --light: rgba(255,255,255,0.85);
 }
 
-body{
-margin:0;
-font-family: Arial, sans-serif;
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
 }
 
-header{
-background: var(--primary);
-color:white;
-text-align:center;
-padding:1rem;
-border-bottom: 20px solid var(--secondary);
+header {
+    background: var(--primary);
+    color:white;
+    text-align:center;
+    padding:1rem;
+    border-bottom: 20px solid var(--secondary);
 }
 
 /* HERO IMAGE */
+.hero {
+    position: relative;
+}
 
-
-.hero img{
-width:100%;
-display:block;
+.hero img {
+    width:100%;
+    display:block;
 }
 
 /* CARDS */
-.card{
-background: var(--light);
-padding:15px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-margin:10px;
-text-align: center;
+.card {
+    background: var(--light);
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    margin:10px;
+    text-align: center;
 }
 
 /* MOBILE VIEW */
-.weather img{
-width:40px;
+.weather img {
+    width:40px;
 }
 
 /* FOOTER */
-footer{
-text-align:center;
-background: var(--primary);
-color:white;
-padding:10px;
+footer {
+    text-align:center;
+    background: var(--primary);
+    color:white;
+    padding:10px;
 }
 
 /* DESKTOP VIEW */
 @media (min-width: 768px){
 
-main{
-width: 100%;
-margin:auto;
-}
+    main {
+        width: 100%;
+        margin:auto;
+    }
 
-h2 {
-    background-color: var(--secondary);
-    padding: 10px;
-}
+    h2 {
+        background-color: var(--secondary);
+        padding: 10px;
+    }
 
-/* OVERLAY EFFECT */
-.card{
-position:absolute;
-width:250px;
-text-align: center;
-}
+    /* OVERLAY EFFECT */
+    .card {
+        position:absolute;
+        width:250px;
+        text-align: center;
+    }
 
-.hero img {
-    position: relative;
-}
+    /* LEFT SIDE (DATA) */
+    #class1 {
+        top:20%;
+        left:0;
+    }
 
-/* LEFT SIDE (DATA) */
-#class1 {
-    top:20%;
-    left:0;
-}
-
-/* RIGHT SIDE (WEATHER) */
-.weather{
-top:100%;
-right:0;
-}
+    /* RIGHT SIDE (WEATHER) */
+    .weather {
+        top:40%;
+        right:0;
+    }
 
 
 
-/* HIDE SVG */
-.weather img{
-display:none;
-}
+    /* HIDE SVG */
+    .weather img {
+        display:none;
+    }
 
-/* EMOJI */
-.weather-title::after{
-content:" ⛅";
-}
+    /* EMOJI */
+    .weather-title::after {
+        content:" ⛅";
+    }
 
 }
