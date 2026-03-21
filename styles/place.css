@@ -35,6 +35,7 @@ padding:15px;
 border-radius:8px;
 box-shadow:0 0 10px rgba(0,0,0,0.2);
 margin:10px;
+text-align: center;
 }
 
 /* MOBILE VIEW */
@@ -73,13 +74,13 @@ text-align: center;
 
 /* LEFT SIDE (DATA) */
 #class1 {
-    top:30%;
+    top:20%;
     left:0;
 }
 
 /* RIGHT SIDE (WEATHER) */
 .weather{
-top:100%;
+top:40%;
 right:0;
 }
 
