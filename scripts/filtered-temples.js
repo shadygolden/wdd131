@@ -1,4 +1,4 @@
-const menuButton = document.querySelector("#menu");
+const menuButton = document.querySelector("#butt");
 const navigation = document.querySelector("nav");
 const firstTemp = document.querySelector("#temp")
 
