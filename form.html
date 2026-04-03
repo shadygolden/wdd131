@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+
+            <!-- PRODUCT NAME -->
+             
+             
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <option value="Phone">Phone</option>
+                <option value="Generator">Generator</option>
+                <option value="Spanner">Spanner</option>
+                <option value="Television">Television</option>
+            </select>
+
+            <!-- OVERALL RATING -->
+             
+            <fieldset class="rating-field">
+                <legend>Overall Rating</legend>
+
+                <label>
+                    ☆<br>
+                    <input type="radio" name="rating" value="1" required>
+                    
+                </label>
+                <label>
+                    ☆☆<br>
+                    <input type="radio" name="rating" value="2">
+                </label>
+                <label>
+                    ☆☆☆<br>
+                    <input type="radio" name="rating" value="3">
+                </label>
+                <label>
+                    ☆☆☆☆<br>
+                    <input type="radio" name="rating" value="4">
+                </label>
+                <label>
+                    ☆☆☆☆☆<br>
+                    <input type="radio" name="rating" value="5">
+                </label>
+            </fieldset>
+
+            <!-- DATE INSTALLED -->
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <!-- FEATURES -->
+            <fieldset class="checkbox-features">
+                <legend>Which features did you find useful? <br>(Check all that apply)</legend>
+
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+            </fieldset>
+            <br>
+            <!-- WRITTEN REVIEW -->
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- USER NAME -->
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Post Review" class="submit-btn">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>©2024 🌸 Your Name 🌸 Your Location</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        document.querySelector("#lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

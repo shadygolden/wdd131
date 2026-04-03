@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main class="review-confirm">
+        <p>Your review has been successfully submitted.</p>
+
+        <p>Total Reviews Submitted:  
+            <strong id="reviewCount"></strong>
+        </p>
+
+        <a href="form.html" class="back-btn">Submit Another Review</a>
+    </main>
+
+    <footer>
+        <p>©2024 🌸 Your Name 🌸 Your Location</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // increment review counter in localStorage
+        let count = Number(localStorage.getItem("reviewCount")) || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+
+        document.querySelector("#reviewCount").textContent = count;
+        document.querySelector("#lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
