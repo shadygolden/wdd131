@@ -25,7 +25,6 @@ main {
     background: #d7cdd7;
     padding: 1.5rem;
     border-radius: 10px;
-    
     margin: auto;
 }
 
@@ -63,24 +62,17 @@ fieldset {
 .rating-field label {
     display: inline-block;
     margin-right: 10px;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     text-align: center;
 }
 
-.rating-field label input {
-     transform: scale(1.8);
-}
 
 .checkbox-features {
     display: flex;
     flex-direction: column;
 }
 
-.checkbox-features input {
-    transform: scale(1.8);
-    margin: 10px;
-    
-}
+
 
 .submit-btn {
     margin-top: 1.5rem;
@@ -122,12 +114,29 @@ footer {
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .review-form {
         background: #d7cdd7;
         padding: 1.5rem;
         border-radius: 10px;
         max-width: 800px;
         margin: auto;
-}
+    }
+
+    .rating-field label input {
+        transform: scale(1.8);
+    }
+
+    .checkbox-features input {
+        transform: scale(1.8);
+        margin: 10px;
+
+    }
+
+    .rating-field label {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
