@@ -9,7 +9,7 @@
         content="The page allows the users to access the different products available and carry out a review on it">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script defer src="form.js"></script>
+    <script defer src="scripts/form.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -42,25 +42,30 @@
             <fieldset class="rating-field">
                 <legend>Overall Rating</legend>
 
-                <label id="rate1">
-                    ☆<br>
+                <label for="rate1">
+                    ☆
+                    <br>
                     <input type="radio" id="rate1" name="rating" value="1" required>
 
                 </label>
-                <label id="rate2">
-                    ☆☆<br>
+                <label for="rate2">
+                    ☆☆
+                    <br>
                     <input type="radio" id="rate2" name="rating" value="2" required>
                 </label>
-                <label id="rate3">
-                    ☆☆☆<br>
+                <label for="rate3">
+                    ☆☆☆
+                    <br>
                     <input type="radio" id="rate3" name="rating" value="3" required>
                 </label>
-                <label id="rate4">
-                    ☆☆☆☆<br>
+                <label for="rate4">
+                    ☆☆☆☆
+                    <br>
                     <input type="radio" id="rate4" name="rating" value="4" required>
                 </label>
-                <label id="rate5">
-                    ☆☆☆☆☆<br>
+                <label for="rate5">
+                    ☆☆☆☆☆
+                    <br>
                     <input type="radio" id="rate5" name="rating" value="5" required>
                 </label>
             </fieldset>
@@ -73,12 +78,12 @@
             <fieldset class="checkbox-features">
                 <legend>Which features did you find useful? <br>(Check all that apply)</legend>
 
-                <label id="durability1"><input type="checkbox" id="durability1" name="features" value="durability">
+                <label for="durability1"><input type="checkbox" id="durability1" name="features" value="durability">
                     Durability</label>
-                <label id="ease1"><input type="checkbox" id="ease1" name="features" value="ease"> Ease of Use</label>
-                <label id="performance1"><input type="checkbox" id="performance1" name="features" value="performance">
+                <label for="ease1"><input type="checkbox" id="ease1" name="features" value="ease"> Ease of Use</label>
+                <label for="performance1"><input type="checkbox" id="performance1" name="features" value="performance">
                     Performance</label>
-                <label id="design1"><input type="checkbox" id="design1" name="features" value="design"> Design</label>
+                <label for="design1"><input type="checkbox" id="design1" name="features" value="design"> Design</label>
             </fieldset>
             <br>
             <!-- WRITTEN REVIEW -->
