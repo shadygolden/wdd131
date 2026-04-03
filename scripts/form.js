@@ -16,4 +16,4 @@ products.forEach(product => {
     select.appendChild(option);
 });
 
-
+document.querySelector("#lastModified").textContent = document.lastModified;
