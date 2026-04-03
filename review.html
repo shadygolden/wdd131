@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+    <meta name="description"
+        content="The page allows the users to know the different products that have been reviewed and the number of reviews that have been carried out.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Submitted</title>
     <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/review.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +23,7 @@
     <main class="review-confirm">
         <p>Your review has been successfully submitted.</p>
 
-        <p>Total Reviews Submitted:  
+        <p>Total Reviews Submitted:
             <strong id="reviewCount"></strong>
         </p>
 
@@ -23,18 +31,10 @@
     </main>
 
     <footer>
-        <p>©2024 🌸 Your Name 🌸 Your Location</p>
+        <p>©2024 🌸 Uzoka Shadrack Chinedu 🌸 Your Location</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 
-    <script>
-        // increment review counter in localStorage
-        let count = Number(localStorage.getItem("reviewCount")) || 0;
-        count++;
-        localStorage.setItem("reviewCount", count);
-
-        document.querySelector("#reviewCount").textContent = count;
-        document.querySelector("#lastModified").textContent = document.lastModified;
-    </script>
 </body>
+
 </html>
